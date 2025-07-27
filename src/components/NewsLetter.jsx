@@ -5,7 +5,7 @@ export default function NewsLetter(){
             <p className="text-sm font-semibold text-gray-800 ">Be the first to know about our new arrivals,sales and exclusive offers</p>
             <div  className="flex  gap-4">
                 <input  className="bg-gray-300 p-2 " placeholder="Enter your email"/>
-                <button className="bg-black  text-white px-4 py-3">Subscribe</button>
+                <button className="bg-gray-900  hover:bg-gray-700   text-white px-4 py-3 cursor-pointer">Subscribe</button>
             </div>
         </div>
     )

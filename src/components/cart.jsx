@@ -3,21 +3,18 @@ import NavBar from "./navBar";
 import { CartContext } from "../cartContext";
 import { CartCard } from "./cartCard";
 import OrderCard from "./orderCard";
+import { useNavigate } from "react-router";
 
 
 function Cart(){
-
+  let navigate=useNavigate();
   const {cartData,setCartData}=useContext(CartContext);
 
-  console.log(cartData)
   
 
   function handleDelete(itemId){
     setCartData((prev)=> prev.filter((item)=>item.id!==itemId));
   }
-
-
-  
 
   function handleIncrement(itemId){
    setCartData((prevCart)=>
@@ -35,13 +32,31 @@ function Cart(){
      ))
   }
 
+
+  
+
   return(
     <div>
         <NavBar/>
-        <h1 className="text-center">Your Shopping Cart</h1>
-        <div  className="flex justify-around  items-center border-2 border-amber-300 h-screen ">
+        <h1 className="text-center mt-30 mb-20 text-3xl text-purple-800 font-bold ">Your Shopping Cart</h1>
 
-          <div className=" border-2 border-amber-300 flex flex-col gap-3 h-full min-w-1/2 overflow-y-scroll">
+        {(cartData.length===0)?
+
+        (<div className="flex flex-col items-center  justify-center   ">
+        <div className=" flex flex-col justify-center  items-center w-100  p-5 shadow-sm gap-10">
+         <p className="text-2xl  text-gray-600"> Your  cart is Empty </p>
+        <button  onClick={()=>navigate("/shop")} className="p-3 bg-red-500 rounded hover:bg-red-600 cursor-pointer">Back To Shop</button>
+        </div>
+     
+        </div>
+        ):
+
+        (
+          <div  className="flex justify-around  items-center  h-screen ">
+
+          <button className="absolute left-30 top-40 bg-orange-400  hover:bg-amber-500 px-4 py-3 text-white text-xl cursor-pointer  rounded  font-semibold">remove all</button>
+
+          <div className=" flex flex-col gap-3 h-full min-w-1/2 overflow-y-scroll">
           {
             cartData.map((item)=>
             <CartCard  key={item.id} item={item} onDelete={handleDelete}  onIncrement={handleIncrement} onDecrement={handleDecrement} />
@@ -52,8 +67,8 @@ function Cart(){
          <OrderCard cartData={cartData}/>
 
         </div>
+        )}
         
-
        
       
 

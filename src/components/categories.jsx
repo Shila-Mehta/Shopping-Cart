@@ -6,7 +6,7 @@ export  default  function Categories({item,setfilteredData,setCategory}){
     
     return (
         <>
-            <h2 className='mb-5 mt-15 text-center'>Categories Section:</h2>
+            <h2 className='mb-5 mt-25 text-center text-3xl font-bold  text-fuchsia-700'>Search By  Category</h2>
             <div className="flex justify-around   ">
                  <p   onClick={()=>{
                     setfilteredData(filteredData("men's clothing",item))
