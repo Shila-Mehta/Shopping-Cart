@@ -9,7 +9,7 @@ import { useNavigate } from "react-router";
 
 
 function Shop(){
-  const [data,setData]= useData()
+  const {data}= useData()
   const [filteredData,setfilteredData]=useFilteredData(data)
   const [category,setCategory]= useCategory();
   let navigate=useNavigate();
@@ -35,8 +35,7 @@ function Shop(){
                }
 
            </div>
-          
-        </div>
+         </div>
     )
 }
 

@@ -1,10 +1,27 @@
+import FeaturedProducts from "./FeaturedProducts";
+import Footer from "./footer";
+import Hero from "./hero1";
+import Hero2 from "./hero2";
 import NavBar from "./navBar";
+import Reviews from "./reviews";
+
 
 function Home(){
     return(
         <div>
             <NavBar/>
-             <p> Welcome to Home page</p>
+            {/* <Hero/> */}
+            <Hero2/>
+              <FeaturedProducts/>
+             <h1 className="text-center mb-4  text-purple-600 font-bold text-3xl  shadow-sm">What our Cutomers Say</h1>
+             <div className="flex justify-around shadow-sm mb-5">
+             <Reviews/>
+             <Reviews/>
+             <Reviews/>
+             </div>
+            <Footer/>
+
+             
         </div>
     ) 
 }

@@ -18,15 +18,15 @@ let router=createBrowserRouter([
   Component:Home
  },
  {
-  path:'shop',
+  path:'/shop',
   Component:Shop
   },
  {
-  path:'product',
+  path:'/product',
   Component:Product
   },
  {
-  path:'cart',
+  path:'/cart',
   Component:Cart
  }
 ])

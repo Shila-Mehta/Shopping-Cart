@@ -7,7 +7,6 @@ export default  function Product(){
 
 const {cartData,setCartData} = useContext(CartContext);
 
-// console.log("cartData type:",Array.isArray(cartData)); // should be 'object'
 
 let location=useLocation();
 
@@ -15,12 +14,22 @@ let location=useLocation();
 function handleCartUpdate(){
     const item=location.state.item;
 
-    const exits=cartData.some( obj => obj.id ===item.id);
+     setCartData(prev => {
 
-    if(!exits)  setCartData((prev)=>[...prev,item]);
+      const exists = prev.find(obj => obj.id === item.id);
+
+    if (exists) {
+      return prev.map(obj =>
+        
+        obj.id === item.id ? { ...obj, quantity: obj.quantity + 1 } : obj
+      );
+    } else 
+    {
+      return [...prev, { ...item, quantity: 1 }];
+    }
+  });
   
 }
-
 
     return (
         <div className=" w-screen  h-screen flex  items-center  justify-center  gap-6">
