@@ -16,6 +16,11 @@ function Cart(){
     setCartData((prev)=> prev.filter((item)=>item.id!==itemId));
   }
 
+  function handleDeleteAll(){
+    setCartData( []);
+  }
+
+
   function handleIncrement(itemId){
    setCartData((prevCart)=>
      prevCart.map((item)=>
@@ -54,7 +59,7 @@ function Cart(){
         (
           <div  className="flex justify-around  items-center  h-screen ">
 
-          <button className="absolute left-30 top-40 bg-orange-400  hover:bg-amber-500 px-4 py-3 text-white text-xl cursor-pointer  rounded  font-semibold">remove all</button>
+          <button onClick={handleDeleteAll} className="absolute left-30 top-40 bg-orange-400  hover:bg-amber-500 px-4 py-3 text-white text-xl cursor-pointer  rounded  font-semibold">remove all</button>
 
           <div className=" flex flex-col gap-3 h-full min-w-1/2 overflow-y-scroll">
           {
@@ -78,3 +83,5 @@ function Cart(){
 
 
 export default  Cart;
+
+
