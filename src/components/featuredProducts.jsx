@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useData } from "../useData";
+import { useData } from "../hooks/useData";
 import { filteredData } from "../utils/filteredData";
 
 export default function FeaturedProducts(){

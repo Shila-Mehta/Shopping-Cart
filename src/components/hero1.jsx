@@ -2,7 +2,7 @@ import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { useRef } from 'react'
 
-export default function Hero() {
+export default function Hero1() {
   const timer = useRef()
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,

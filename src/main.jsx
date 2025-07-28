@@ -8,7 +8,8 @@ import Home from './components/home.jsx'
 import Shop from './components/shop.jsx'
 import Cart from './components/cart.jsx'
 import Product from './components/product.jsx'
-import CartProvider from './cartContext.jsx'
+import CartProvider from './hooks/cartContext.jsx'
+
 
 
 

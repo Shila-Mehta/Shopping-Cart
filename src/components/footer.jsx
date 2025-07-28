@@ -1,4 +1,4 @@
-import NewsLetter from "./NewsLetter"
+import NewsLetter from "./newsLetter"
 
 export default function Footer(){
     return(
@@ -9,7 +9,7 @@ export default function Footer(){
 
         <div className="  flex justify-evenly  bg-gray-300 p-5 ">
         <div >
-        <h1 className="text-2xl font-bold">N.shop</h1>
+        <h1 className="text-2xl font-bold">Shopi</h1>
         <p className="text-gray-800 text-md">our shop is very nice</p>
         </div>
 
@@ -34,7 +34,7 @@ export default function Footer(){
         </div>
     </div>
       <hr></hr>
-      <p className="text-center">© 2025 M.Shop. All rights reserved.</p>
+      <p className="text-center">© 2025 Shopi All rights reserved.</p>
     </div>
 
   
