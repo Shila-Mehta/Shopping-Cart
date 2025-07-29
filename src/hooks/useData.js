@@ -1,11 +1,17 @@
 import { useEffect, useState } from "react";
 
 export function useData (){
+
 const [data,setData]=useState(()=>{
   const stored=localStorage.getItem('productData');
   return stored ? JSON.parse(stored):[]
 });
-const [loading,setLoading]=useState(true)
+
+const [loading,setLoading]=useState(()=>{
+ const stored=localStorage.getItem('productData');
+ return stored ?false:true;
+})
+
 const [error,setError]=useState(null);
 
   useEffect(()=>{
@@ -28,7 +34,6 @@ const [error,setError]=useState(null);
 
   },[])
   
-  // console.log(data);
   return {
     data,setData,
     loading ,setLoading,
