@@ -1,12 +1,47 @@
-# React + Vite
+🛒 React Shopping Cart
+A modern and responsive shopping cart application built with React.js and styled using Tailwind CSS. It features dynamic product browsing, cart management, filtering by category, customer reviews, and more—all with a clean and intuitive UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🛍️ Browse Products – View a list of all products with images, price, and title
 
-Currently, two official plugins are available:
+➕ Add to Cart – Add items to cart and adjust quantity
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧹 Remove / Clear Cart – Delete individual items or empty cart
 
-## Expanding the ESLint configuration
+🔄 Cart Persistence – Saved in local storage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔍 Filter by Category – Filter products based on selected category
+
+🖼️ Image Carousel – Homepage hero carousel for promotions or banners
+
+⭐ Featured Products – Display top-rated or curated products
+
+💬 Customer Reviews – Card-based reviews section
+
+📬 Newsletter Subscription – Newsletter signup at footer
+
+⚡ Tailwind CSS – Clean, utility-first styling
+
+📱 Responsive Design – Optimized for all screen sizes
+
+
+🧠 Technologies Used
+React.js
+
+Tailwind CSS
+
+React Router DOM
+
+LocalStorage
+
+Custom Hooks (e.g., useCart)
+
+Image Carousel Library (keen-slider)
+
+
+📦 Data Handling
+Products and categories are currently sourced from local data files.
+
+Easy to switch to external APIs like FakeStoreAPI.
+
+
