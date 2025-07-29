@@ -3,7 +3,7 @@ import { Icons } from "../data/icons";
 
 export  function CartCard({item,onDelete,onIncrement,onDecrement}){
     return (
-        <div className=" p-5  flex  justify-around  items-center   shadow-sm  h-30  max-w-500   transition duration-300 ease-in-out hover:translate-y-1">
+        <div className=" p-5  flex  justify-around  items-center   shadow-sm  h-30  max-w-700   transition duration-300 ease-in-out hover:translate-y-1">
 
          <div className="max-w-20 h-20"><img  className="w-full  h-full object-contain" src={item.image}/> </div>
          <p className=" max-w-60 ">{item.title}</p>

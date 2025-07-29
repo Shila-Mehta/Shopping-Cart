@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { Icons } from "../data/icons";
 import { useContext } from "react";
 import { CartContext } from "../hooks/cartContext";
@@ -6,9 +6,10 @@ import { CartContext } from "../hooks/cartContext";
 
 function NavBar(){
   const {cartData}=useContext(CartContext);
+  let navigate=useNavigate();
   return (
     <nav className=" py-2  flex justify-between items-center shadow-sm fixed top-0   w-full bg-white z-10">
-    <h2 className="ml-20 flex  justify-center items-center  font-bold text-white bg-red-500  rounded-full size-12 text-sm  ">Shopi</h2>
+    <h2 onClick={()=>navigate('/')} className="ml-20 flex  justify-center items-center  font-bold text-white bg-red-500  rounded-full size-12 text-sm px-2 cursor-pointer ">Shopi</h2>
     <div className=" mr-10 flex  gap-20">
     <Link  to="/"   className="text-xl font-semibold  text-gray-600" > Home </Link>
     <Link  to="/shop"  className="text-xl font-semibold text-gray-600"> Products </Link>

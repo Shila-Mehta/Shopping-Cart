@@ -11,7 +11,7 @@ import { useNavigate } from "react-router";
 function Shop(){
   const {data}= useData()
   const [filteredData,setfilteredData]=useFilteredData(data)
-  const [category,setCategory]= useCategory();
+  const [setCategory]= useCategory();
   let navigate=useNavigate();
 
    
@@ -21,7 +21,7 @@ function Shop(){
             <NavBar/>
            <Categories  item={data} setfilteredData={setfilteredData}  setCategory={setCategory}   />
 
-           <div className=" mt-4 grid grid-cols-4 gap-5 ">
+           <div className=" mt-4 grid  grid-cols-1  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-5 ">
 
              {filteredData.map((item)=>
               <Card 

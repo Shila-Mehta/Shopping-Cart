@@ -32,7 +32,7 @@ export default function FeaturedProducts(){
     return(
         <div className="mb-3 shadow-sm py-5">
             <h1 className="text-center  shadow-sm   text-purple-700 text-2xl font-bold mb-3">Featured Products</h1>
-            <div className="flex justify-around">
+            <div className="flex flex-col items-center  md:flex-row  lg:flex-row justify-around">
                 <div className=" shadow-lg size-50 p-2">
                 <img src={men[currIndex].image} className="w-full h-full object-contain"/>
                 </div>

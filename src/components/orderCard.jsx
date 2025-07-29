@@ -1,6 +1,6 @@
 export default function OrderCard({cartData}){
     return(
-        <div  className=" flex  flex-col justify-between border-1 border-b-black p-5  min-w-80 min-h-70">
+        <div  className=" flex  flex-col justify-between shadow-xl p-5  min-w-80 min-h-70">
 
             <h1 className="text-center text-red-500  text-2xl font-bold ">Order Summary</h1>
 
@@ -15,7 +15,7 @@ export default function OrderCard({cartData}){
             </div>
     
 
-            <button className="p-3  bg-purple-500  rounded hover:bg-purple-400 cursor-pointer  text-xl text-white font-semibold">Proceed  to checkout</button>
+            <button className="py-3   bg-purple-500  rounded hover:bg-purple-400 cursor-pointer  text-[18px] text-white font-semibold">Proceed  to checkout</button>
         </div>
     )
 }

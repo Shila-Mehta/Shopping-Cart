@@ -32,9 +32,9 @@ import { CartEvents } from "../handlers/carthandler";
         ):
 
         (
-          <div  className="flex justify-around  items-center  h-screen ">
-
-          <button onClick={DeleteAll} className="absolute left-30 top-40 bg-orange-400  hover:bg-amber-500 px-4 py-3 text-white text-xl cursor-pointer  rounded  font-semibold flex  gap-4">{<Icons.Trash/>} All</button>
+          <div  className=" flex  lg:flex-row justify-around  items-center  h-screen flex-col  gap-10 px-4">
+           
+          <button onClick={DeleteAll} className=" flex absolute left-30 top-40 bg-orange-400  hover:bg-amber-500 px-4 py-3 text-white text-sm   cursor-pointer  rounded  font-semibold    gap-4">{<Icons.Trash/>} All</button>
 
           <div className=" flex flex-col gap-3 h-full min-w-1/2 overflow-y-scroll">
           {
@@ -61,5 +61,6 @@ import { CartEvents } from "../handlers/carthandler";
 
 
 export default  Cart;
+
 
 

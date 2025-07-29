@@ -1,4 +1,4 @@
-import NewsLetter from "./newsLetter"
+import NewsLetter from "./NewsLetter"
 
 export default function Footer(){
     return(
@@ -7,10 +7,11 @@ export default function Footer(){
             <NewsLetter/>
           </div> 
 
-        <div className="  flex justify-evenly  bg-gray-300 p-5 ">
+        <div className="grid  grid-cols-2 md:grid-cols-4 lg:grid-cols-4 bg-gray-300 p-5   ">
+         
         <div >
-        <h1 className="text-2xl font-bold">Shopi</h1>
-        <p className="text-gray-800 text-md">our shop is very nice</p>
+        <h1 className="text-2xl font-bold mb-3">Shopi</h1>
+        <p className="text-gray-800 text-md  max-w-50">Your style picks are just a click away</p>
         </div>
 
         <div>

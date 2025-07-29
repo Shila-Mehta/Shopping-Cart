@@ -10,5 +10,5 @@ export default function ReviewStars({rating}){
             stars.push(<Icons.StarEmpty/>)
          }
      }
-     return <div className="flex justify-center text-yellow-300 mb-2">{stars}</div>;
+     return <div className="flex justify-center text-yellow-300 mb-2" key={rating}>{stars}</div>;
 }
