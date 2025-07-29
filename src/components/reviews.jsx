@@ -1,4 +1,4 @@
-import ReviewStars from "./ReviewStars"
+import ReviewStars from "./reviewStars"
 export default function Reviews({review}){
 
     return(

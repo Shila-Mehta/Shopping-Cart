@@ -1,11 +1,9 @@
 import { reviews } from "../data/review";
-import FeaturedProducts from "./FeaturedProducts";
 import Footer from "./footer";
 import Hero2 from "./hero2";
 import NavBar from "./navBar";
 import Reviews from "./reviews";
-
-
+import FeaturedProducts from "./featuredProducts";
 
 function Home(){
     return(
@@ -26,3 +24,4 @@ function Home(){
 
 
 export default Home;
+
