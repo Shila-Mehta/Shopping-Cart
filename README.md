@@ -1,7 +1,9 @@
 🛒 React Shopping Cart
+
 A modern and responsive shopping cart application built with React.js and styled using Tailwind CSS. It features dynamic product browsing, cart management, filtering by category, customer reviews, and more—all with a clean and intuitive UI.
 
 ✨ Features
+
 🛍️ Browse Products – View a list of all products with images, price, and title
 
 ➕ Add to Cart – Add items to cart and adjust quantity
@@ -24,8 +26,8 @@ A modern and responsive shopping cart application built with React.js and styled
 
 📱 Responsive Design – Optimized for all screen sizes
 
-
 🧠 Technologies Used
+
 React.js
 
 Tailwind CSS
@@ -38,10 +40,11 @@ Custom Hooks (e.g., useCart)
 
 Image Carousel Library (keen-slider)
 
-
 📦 Data Handling
+
 Products and categories are currently sourced from local data files.
 
 Easy to switch to external APIs like FakeStoreAPI.
 
-
+About
+No description, website, or topics provided.
