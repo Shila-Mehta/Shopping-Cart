@@ -5,7 +5,6 @@ import { CartEvents } from "../handlers/carthandler";
 
 
 function Card({item, handleNavigation}){
-
   const {setCartData}=useContext(CartContext);
    const {Update}=CartEvents(setCartData);
 

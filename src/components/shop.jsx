@@ -10,6 +10,7 @@ import { useNavigate } from "react-router";
 
 function Shop(){
   const {data}= useData()
+  console.log(data);
   const [filteredData,setfilteredData]=useFilteredData(data)
   const [setCategory]= useCategory();
   let navigate=useNavigate();

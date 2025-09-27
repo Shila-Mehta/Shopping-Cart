@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 
 export function useData (){
 
-const [data,setData]=useState(()=>{
+const [data,setData]=useState(
+  ()=>{
   const stored=localStorage.getItem('productData');
   return stored ? JSON.parse(stored):[]
-});
+}
+);
 
 const [loading,setLoading]=useState(()=>{
  const stored=localStorage.getItem('productData');
@@ -27,7 +29,6 @@ const [error,setError]=useState(null);
     })
     .catch(err=> {
       setError('Failed to load data')
-      console.log(err);
       setLoading(false)
     })
   
