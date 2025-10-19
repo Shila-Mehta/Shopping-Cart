@@ -7,7 +7,7 @@ A modern and responsive shopping cart application built with React.js and styled
 ## Project Screen shots:
 
 <img width="500" height="500" alt="shopping-cart-nimra netlify app_" src="https://github.com/user-attachments/assets/cc66351e-cdcd-4461-b1bb-eeee6a94b4c7" />
-<img width="500" height="500" alt="shopping-cart-nimra netlify app_ (1)" src="https://github.com/user-attachments/assets/52e6c155-0d04-41fc-a0b4-353b4fd8210c" />
+<img width="2816" height="3202" alt="shopping-cart-nimra netlify app_ (7)" src="https://github.com/user-attachments/assets/6444b372-5ec2-46d0-8bdf-203666e203f1" />
 <img width="500" height="500" alt="shopping-cart-nimra netlify app_ (2)" src="https://github.com/user-attachments/assets/a54b43a1-af22-48d6-9860-b62e9737dadf" />
 <img width="500" height="500" alt="shopping-cart-nimra netlify app_ (3)" src="https://github.com/user-attachments/assets/258f9600-5486-4f30-bbdd-770c8c225988" />
 <img width="500" height="500" alt="shopping-cart-nimra netlify app_ (4)" src="https://github.com/user-attachments/assets/8d518e70-bcc4-4618-8d87-04c2c2fd0a17" />
