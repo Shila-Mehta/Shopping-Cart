@@ -1,8 +1,11 @@
-🛒 React Shopping Cart
+## 🛒 React Shopping Cart
 
 A modern and responsive shopping cart application built with React.js and styled using Tailwind CSS. It features dynamic product browsing, cart management, filtering by category, customer reviews, and more—all with a clean and intuitive UI.
 
-✨ Features
+##Live Demo (https://shopping-cart-nimra.netlify.app/)
+
+
+## ✨ Features
 
 🛍️ Browse Products – View a list of all products with images, price, and title
 
@@ -26,7 +29,7 @@ A modern and responsive shopping cart application built with React.js and styled
 
 📱 Responsive Design – Optimized for all screen sizes
 
-🧠 Technologies Used
+## 🧠 Tech Stack
 
 React.js
 
@@ -40,11 +43,81 @@ Custom Hooks (e.g., useCart)
 
 Image Carousel Library (keen-slider)
 
-📦 Data Handling
+Cloth Api (https://fakestoreapi.com/products)
 
-Products and categories are currently sourced from local data files.
 
-Easy to switch to external APIs like FakeStoreAPI.
+## Project Structure :
+```
+└── 📁Shopping Cart
+    └── 📁my-react-app
+        └── 📁public
+            ├── Backward.png
+            ├── clothCollection1.jpg
+            ├── clothCollection2.jpg
+            ├── clothCollection3.jpg
+            ├── Forward.png
+            ├── jewellery.jpg
+            ├── vite.svg
+        └── 📁src
+            └── 📁assets
+                ├── react.svg
+            └── 📁components
+                ├── card.jsx
+                ├── cart.jsx
+                ├── cartCard.jsx
+                ├── categories.jsx
+                ├── featuredProducts.jsx
+                ├── footer.jsx
+                ├── hero1.jsx
+                ├── hero2.jsx
+                ├── home.jsx
+                ├── navBar.jsx
+                ├── newsLetter.jsx
+                ├── orderCard.jsx
+                ├── product.jsx
+                ├── reviews.jsx
+                ├── reviewStars.jsx
+                ├── shop.jsx
+            └── 📁data
+                ├── icons.js
+                ├── images.js
+                ├── review.js
+            └── 📁handlers
+                ├── carthandler.js
+            └── 📁hooks
+                ├── cartContext.jsx
+                ├── useCategory.js
+                ├── useData.js
+                ├── useFilteredData.js
+            └── 📁utils
+                ├── filteredData.js
+            ├── index.css
+            ├── main.jsx
+        ├── .gitignore
+        ├── eslint.config.js
+        ├── index.html
+        ├── package-lock.json
+        ├── package.json
+        ├── README.md
+        └── vite.config.js
+```
 
-About
-No description, website, or topics provided.
+
+👩‍💻 About Me
+
+I'm a front-end developer passionate about building polished, interactive web applications with a focus on user experience, performance, and clean architecture.
+
+📁 View more of my work on my portfolio(https://nimra-react-portfolio.netlify.app/)
+
+💼 Connect with me on LinkedIn (https://www.linkedin.com/feed/)
+
+
+## Clone the repo
+
+ git clone  https://github.com/Shila-Mehta/Shopping-Cart.git
+
+ cd Shopping Cart /my-react-app
+
+📄 License
+
+This project is licensed under the MIT License.
