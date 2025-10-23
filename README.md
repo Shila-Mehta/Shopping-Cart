@@ -127,7 +127,7 @@ I'm a front-end developer passionate about building polished, interactive web ap
 
 📁 View more of my work on my portfolio(https://nimra-react-portfolio.netlify.app/)
 
-💼 Connect with me on LinkedIn (https://www.linkedin.com/feed/)
+💼 Connect with me on LinkedIn (https://www.linkedin.com/in/n-jabbar-1113aa374/)
 
 
 ## Clone the repo
